@@ -1,0 +1,21 @@
+# python environments
+.venv/
+
+# python-generated files
+__pycache__/
+*.py[cod]
+
+# jupyter-generated files
+.ipynb_checkpoints/
+
+# macOS-generated files
+.DS_Store
+
+# secrets
+.env
+
+# large model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
