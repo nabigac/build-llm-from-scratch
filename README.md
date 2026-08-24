@@ -1,4 +1,4 @@
-# build an llm from scratch
+# build an LLM from scratch
 
 a learning project for implementing a gpt-style large language model from first principles.
 
