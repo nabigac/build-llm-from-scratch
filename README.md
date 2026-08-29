@@ -4,7 +4,7 @@ a learning project for implementing a gpt-style large language model from first 
 
 the project follows and is based on sebastian raschka's book, *build a large language model (from scratch)*.
 
-high-level process: 
+\nhigh-level process: 
 1. **load raw text** -- read the training data into one python string
 2. **tokenize the text** -- split the text into tokens using bpe tokenizer
 3. **convert tokens into token IDs** -- map every token to an integer from the tokenizer's vocabulary
