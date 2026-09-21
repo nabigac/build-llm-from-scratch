@@ -6,7 +6,7 @@ the project follows sebastian raschka's book, [*build a large language model (fr
 
 ## the roadmap
 
-1. **set up the basics** -- install pytorch, learn tensors and automatic differentiation, and build a small training loop.
+1. **set up the basics** -- install PyTorch, learn tensors and automatic differentiation, and build a small training loop.
 
 2. **prepare text data** -- load raw text, tokenize it with byte pair encoding (BPE), and convert tokens into token IDs.
 
@@ -41,6 +41,23 @@ the project follows sebastian raschka's book, [*build a large language model (fr
 - `04_gpt_architecture.ipynb` -- the GPT model architecture
 - `05_pretraining.ipynb` -- pretraining the model on text
 - `06_classification_finetuning.ipynb` -- fine-tuning a pretrained model for text classification
+- `07_instruction_finetuning.ipynb` -- fine-tuning a pretrained model for instruction following
+- `08_lora_finetuning.ipynb` -- fine-tuning a pretrained model with LoRA adapters
+
+## setup
+
+this project uses [uv](https://docs.astral.sh/uv/) for reproducible Python environments.
+it requires Python 3.10 or newer; `uv` will select a compatible interpreter when
+you run:
+
+```bash
+uv sync
+uv run jupyter lab
+```
+
+the environment includes PyTorch plus Hugging Face `transformers`, `datasets`, and
+`accelerate`. to add a future dependency, run `uv add <package>` from the project
+root.
 
 ## shared code
 

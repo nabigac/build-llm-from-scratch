@@ -19,3 +19,4 @@ checkpoints/
 *.pt
 *.pth
 *.ckpt
+notebooks/models/
